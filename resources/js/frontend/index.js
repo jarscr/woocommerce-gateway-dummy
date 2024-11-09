@@ -7,7 +7,7 @@ import { getSetting } from '@woocommerce/settings';
 const settings = getSetting( 'dummy_data', {} );
 
 const defaultLabel = __(
-	'Dummy Payments',
+	'LAFISE Payments',
 	'woo-gutenberg-products-block'
 );
 
@@ -29,10 +29,10 @@ const Label = ( props ) => {
 };
 
 /**
- * Dummy payment method config object.
+ * LAFISE payment method config object.
  */
-const Dummy = {
-	name: "dummy",
+const LAFISE = {
+	name: "lafise",
 	label: <Label />,
 	content: <Content />,
 	edit: <Content />,
@@ -43,4 +43,4 @@ const Dummy = {
 	},
 };
 
-registerPaymentMethod( Dummy );
+registerPaymentMethod( LAFISE );
